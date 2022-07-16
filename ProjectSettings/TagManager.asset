@@ -10,6 +10,7 @@ TagManager:
   - forVipu
   - Lever2
   - forVipuTwo
+  - ButtonK2
   layers:
   - Default
   - TransparentFX

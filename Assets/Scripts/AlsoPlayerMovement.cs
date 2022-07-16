@@ -14,6 +14,11 @@ public class AlsoPlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        body.freezeRotation = true;
+    }
+
     private void Update()
     {
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
