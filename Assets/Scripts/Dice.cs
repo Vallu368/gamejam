@@ -45,7 +45,7 @@ public class Dice : MonoBehaviour {
 
         // Loop to switch dice sides ramdomly
         // before final side appears. 20 itterations here.
-        for (int i = 0; i <= 20; i++)
+        for (int i = 0; i <= 10; i++)
         {
             // Pick up random value from 0 to 5 (All inclusive)
             randomDiceSide = Random.Range(0, 6);
@@ -66,36 +66,42 @@ public class Dice : MonoBehaviour {
 
         if (finalSide == 1)
         {
+            yield return new WaitForSeconds(1f);
             Debug.Log("Map 1");
             map1.SetActive(true);
             diceScreen.transform.position = new Vector2(-8, 0);
         }
         else if(finalSide == 2)
         {
+            yield return new WaitForSeconds(1f);
             Debug.Log("Map 2");
             map2.SetActive(true);
             diceScreen.transform.position = new Vector2(-8, 0);
         }
         else if (finalSide == 3)
         {
+            yield return new WaitForSeconds(1f);
             Debug.Log("Map 3");
             map3.SetActive(true);
             diceScreen.transform.position = new Vector2(-8, 0);
         }
         else if (finalSide == 4)
         {
+            yield return new WaitForSeconds(1f);
             Debug.Log("Map 4");
             map4.SetActive(true);
             diceScreen.transform.position = new Vector2(-8, 0);
         }
         else if (finalSide == 5)
         {
+            yield return new WaitForSeconds(1f);
             Debug.Log("Map 5");
             map5.SetActive(true);
             diceScreen.transform.position = new Vector2(-8, 0);
         }
         else if (finalSide == 6)
         {
+            yield return new WaitForSeconds(1f);
             Debug.Log("Map 6");
             map6.SetActive(true);
             diceScreen.transform.position = new Vector2(-8, 0);
