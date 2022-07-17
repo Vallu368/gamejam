@@ -13,12 +13,6 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] GameObject DiceScene;
     [SerializeField] GameObject Dice;
     [SerializeField] GameObject Player;
-    Vector2 originalPos;
-
-    private void Start()
-    {
-        originalPos = new Vector2(11f, -2.4f);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
