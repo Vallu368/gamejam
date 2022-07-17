@@ -15,10 +15,35 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] GameObject Player;
     [SerializeField] private AudioSource itemSound;
 
+    public bool hasItem1 = false;
+    public bool hasItem2 = false;
+    public bool hasItem3 = false;
+    public bool hasItem4 = false;
+    public bool hasItem5 = false;
+    public bool hasItem6 = false;
+
+    public bool winner = false;
+    [SerializeField] GameObject victoryScreen;
+
+    private void Update()
+    {
+        if(hasItem1 && hasItem2 && hasItem3 && hasItem4 && hasItem5 && hasItem6)
+        {
+            winner = true;
+        }
+
+        if (winner)
+        {
+            victoryScreen.SetActive(true);
+        }
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Item1"))
         {
+            hasItem1 = true;
             Destroy(collision.gameObject);
             itemSound.Play();
             Debug.Log("Item 1 collected");
@@ -31,6 +56,7 @@ public class ItemCollector : MonoBehaviour
 
         if (collision.CompareTag("Item2"))
         {
+            hasItem2 = true;
             Destroy(collision.gameObject);
             itemSound.Play();
             Debug.Log("Item 2 collected");
@@ -43,6 +69,7 @@ public class ItemCollector : MonoBehaviour
 
         if (collision.CompareTag("Item3"))
         {
+            hasItem3 = true;
             Destroy(collision.gameObject);
             itemSound.Play();
             Debug.Log("Item 3 collected");
@@ -55,6 +82,7 @@ public class ItemCollector : MonoBehaviour
 
         if (collision.CompareTag("Item4"))
         {
+            hasItem4 = true;
             Destroy(collision.gameObject);
             itemSound.Play();
             Debug.Log("Item 4 collected");
@@ -67,6 +95,7 @@ public class ItemCollector : MonoBehaviour
 
         if (collision.CompareTag("Item5"))
         {
+            hasItem5 = true;
             Destroy(collision.gameObject);
             itemSound.Play();
             Debug.Log("Item 5 collected");
@@ -79,6 +108,7 @@ public class ItemCollector : MonoBehaviour
 
         if (collision.CompareTag("Item6"))
         {
+            hasItem6 = true;
             Destroy(collision.gameObject);
             itemSound.Play();
             Debug.Log("Item 6 collected");
