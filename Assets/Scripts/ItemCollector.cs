@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ItemCollector : MonoBehaviour
 {
@@ -23,7 +24,6 @@ public class ItemCollector : MonoBehaviour
     public bool hasItem6 = false;
 
     public bool winner = false;
-    [SerializeField] GameObject victoryScreen;
 
     private void Update()
     {
@@ -34,7 +34,7 @@ public class ItemCollector : MonoBehaviour
 
         if (winner)
         {
-            victoryScreen.SetActive(true);
+            SceneManager.LoadScene("Victory");
         }
     }
 
