@@ -17,6 +17,7 @@ public class Dice : MonoBehaviour {
     [SerializeField] GameObject map6;
     [SerializeField] GameObject diceScreen;
     [SerializeField] GameObject player;
+    [SerializeField] GameObject henry;
 
     // Use this for initialization
     private void Start () {
@@ -72,7 +73,8 @@ public class Dice : MonoBehaviour {
             map1.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
-            player.transform.position = new Vector2(3, -6.41f);
+            player.transform.position = new Vector3(3, -6.41f, 0);
+            henry.transform.position = new Vector3(0, 0, 0);
         }
         else if(finalSide == 2)
         {
@@ -81,7 +83,8 @@ public class Dice : MonoBehaviour {
             map2.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
-            player.transform.position = new Vector2(-3.15f, -6.49f);
+            player.transform.position = new Vector3(-3.15f, -6.49f, 0);
+            henry.transform.position = new Vector3(0, 0, 0);
         }
         else if (finalSide == 3)
         {
@@ -90,7 +93,8 @@ public class Dice : MonoBehaviour {
             map3.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
-            player.transform.position = new Vector2(0.37f, -6.46f);
+            player.transform.position = new Vector3(0.37f, -6.46f, 0);
+            henry.transform.position = new Vector3(0, 0, 0);
         }
         else if (finalSide == 4)
         {
@@ -99,7 +103,8 @@ public class Dice : MonoBehaviour {
             map4.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
-            player.transform.position = new Vector2(-3.11f, -6.41f);
+            player.transform.position = new Vector3(-3.11f, -6.41f, 0);
+            henry.transform.position = new Vector3(0, 0, 0);
         }
         else if (finalSide == 5)
         {
@@ -108,7 +113,8 @@ public class Dice : MonoBehaviour {
             map5.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
-            player.transform.position = new Vector2(0.18f, -6.33f);
+            player.transform.position = new Vector3(0.18f, -6.33f, 0);
+            henry.transform.position = new Vector3(0, 0, 0);
         }
         else if (finalSide == 6)
         {
@@ -117,7 +123,8 @@ public class Dice : MonoBehaviour {
             map6.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
-            player.transform.position = new Vector2(3.84f, -6.62f);
+            player.transform.position = new Vector3(3.84f, -6.62f, 0);
+            henry.transform.position = new Vector3(0, 0, 0);
         }
     }
 }
