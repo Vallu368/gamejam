@@ -9,8 +9,16 @@ public class Dice : MonoBehaviour {
     // Reference to sprite renderer to change sprites
     private SpriteRenderer rend;
 
-	// Use this for initialization
-	private void Start () {
+    [SerializeField] GameObject map1;
+    [SerializeField] GameObject map2;
+    [SerializeField] GameObject map3;
+    [SerializeField] GameObject map4;
+    [SerializeField] GameObject map5;
+    [SerializeField] GameObject map6;
+    [SerializeField] GameObject diceScreen;
+
+    // Use this for initialization
+    private void Start () {
 
         // Assign Renderer component
         rend = GetComponent<SpriteRenderer>();
@@ -18,7 +26,7 @@ public class Dice : MonoBehaviour {
         // Load dice sides sprites to array from DiceSides subfolder of Resources folder
         diceSides = Resources.LoadAll<Sprite>("DiceSides/");
 	}
-	
+
     // If you left click over the dice then RollTheDice coroutine is started
     private void OnMouseDown()
     {
@@ -40,7 +48,7 @@ public class Dice : MonoBehaviour {
         for (int i = 0; i <= 20; i++)
         {
             // Pick up random value from 0 to 5 (All inclusive)
-            randomDiceSide = Random.Range(0, 5);
+            randomDiceSide = Random.Range(0, 6);
 
             // Set sprite to upper face of dice from array according to random value
             rend.sprite = diceSides[randomDiceSide];
@@ -55,5 +63,42 @@ public class Dice : MonoBehaviour {
 
         // Show final dice value in Console
         Debug.Log(finalSide);
+
+        if (finalSide == 1)
+        {
+            Debug.Log("Map 1");
+            map1.SetActive(true);
+            diceScreen.transform.position = new Vector2(-8, 0);
+        }
+        else if(finalSide == 2)
+        {
+            Debug.Log("Map 2");
+            map2.SetActive(true);
+            diceScreen.transform.position = new Vector2(-8, 0);
+        }
+        else if (finalSide == 3)
+        {
+            Debug.Log("Map 3");
+            map3.SetActive(true);
+            diceScreen.transform.position = new Vector2(-8, 0);
+        }
+        else if (finalSide == 4)
+        {
+            Debug.Log("Map 4");
+            map4.SetActive(true);
+            diceScreen.transform.position = new Vector2(-8, 0);
+        }
+        else if (finalSide == 5)
+        {
+            Debug.Log("Map 5");
+            map5.SetActive(true);
+            diceScreen.transform.position = new Vector2(-8, 0);
+        }
+        else if (finalSide == 6)
+        {
+            Debug.Log("Map 6");
+            map6.SetActive(true);
+            diceScreen.transform.position = new Vector2(-8, 0);
+        }
     }
 }
