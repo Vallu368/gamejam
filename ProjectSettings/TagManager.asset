@@ -11,6 +11,8 @@ TagManager:
   - Lever2
   - forVipuTwo
   - ButtonK2
+  - ButtonK3
+  - ButtonK5
   layers:
   - Default
   - TransparentFX

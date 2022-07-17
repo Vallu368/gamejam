@@ -7,8 +7,12 @@ public class Lever : MonoBehaviour
     private bool isLever;
     private bool isLeverTwo;
     private bool isButtonKTwo;
+    private bool isButtonKThree;
+    private bool isButtonKFive;
 
     [SerializeField] GameObject tikkaat;
+    [SerializeField] GameObject kalteriKolme;
+    [SerializeField] GameObject kalteriViis;
 
     private void Update()
     {
@@ -25,6 +29,16 @@ public class Lever : MonoBehaviour
         if(isButtonKTwo == true && Input.GetKey(KeyCode.E))
         {
             tikkaat.SetActive(true);
+        }
+
+        if(isButtonKThree == true && Input.GetKey(KeyCode.E))
+        {
+            kalteriKolme.SetActive(false);
+        }
+
+        if (isButtonKFive == true && Input.GetKey(KeyCode.E))
+        {
+            kalteriViis.SetActive(false);
         }
     }
 
@@ -45,6 +59,16 @@ public class Lever : MonoBehaviour
         {
             isButtonKTwo = true;
         }
+
+        if (collision.CompareTag("ButtonK3"))
+        {
+            isButtonKThree = true;
+        }
+
+        if (collision.CompareTag("ButtonK5"))
+        {
+            isButtonKFive = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -63,6 +87,16 @@ public class Lever : MonoBehaviour
         if (collision.CompareTag("ButtonK2"))
         {
             isButtonKTwo = false;
+        }
+
+        if (collision.CompareTag("ButtonK3"))
+        {
+            isButtonKThree = false;
+        }
+
+        if (collision.CompareTag("ButtonK5"))
+        {
+            isButtonKFive = false;
         }
     }
 }
