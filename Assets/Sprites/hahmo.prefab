@@ -101,8 +101,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2297622212884815167}
   m_Bounds:
-    m_Center: {x: -0.00529176, y: 0.00011190772, z: 0}
-    m_Extent: {x: 0.41720277, y: 0.32425475, z: 0}
+    m_Center: {x: -0.0052916408, y: 0.000112354755, z: 0}
+    m_Extent: {x: 0.4172027, y: 0.3242547, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -526,8 +526,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2297622212884815167}
   m_Bounds:
-    m_Center: {x: -0.0036044419, y: 0.003005445, z: 0}
-    m_Extent: {x: 0.28981942, y: 0.4967083, z: 0}
+    m_Center: {x: -0.0036035776, y: 0.0030052066, z: 0}
+    m_Extent: {x: 0.28981942, y: 0.49670824, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -768,7 +768,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 6
   m_Sprite: {fileID: 2889806030440803716, guid: c0816cac1ba043c4da80f1e13d60bbfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -796,8 +796,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2297622212884815167}
   m_Bounds:
-    m_Center: {x: -0.0036109686, y: 0.0015356541, z: 0}
-    m_Extent: {x: 0.39723927, y: 0.5961233, z: 0}
+    m_Center: {x: -0.0036107898, y: 0.0015356541, z: 0}
+    m_Extent: {x: 0.39723924, y: 0.5961232, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -902,8 +902,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2297622212884815167}
   m_Bounds:
-    m_Center: {x: -0.0025572777, y: 0.0024954677, z: 0}
-    m_Extent: {x: 0.3481984, y: 0.654784, z: 0}
+    m_Center: {x: -0.0025571883, y: 0.002495706, z: 0}
+    m_Extent: {x: 0.3481984, y: 0.65478396, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1234,7 +1234,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6150673141785607015, guid: c0816cac1ba043c4da80f1e13d60bbfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1262,8 +1262,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2297622212884815167}
   m_Bounds:
-    m_Center: {x: -0.0025455952, y: -0.00008523464, z: 0}
-    m_Extent: {x: 1.1054602, y: 0.9860941, z: 0}
+    m_Center: {x: -0.002546072, y: -0.000084757805, z: 0}
+    m_Extent: {x: 1.1054599, y: 0.986094, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1441,6 +1441,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bffe27d2660f924388b656395e5c9fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Level1: {fileID: 0}
+  Level2: {fileID: 0}
+  Level3: {fileID: 0}
+  Level4: {fileID: 0}
+  Level5: {fileID: 0}
+  Level6: {fileID: 0}
+  DiceScene: {fileID: 0}
+  Dice: {fileID: 0}
+  Player: {fileID: 0}
+  itemSound: {fileID: 0}
 --- !u!114 &6591038074183567549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1456,6 +1466,7 @@ MonoBehaviour:
   tikkaat: {fileID: 0}
   kalteriKolme: {fileID: 0}
   kalteriViis: {fileID: 0}
+  switchSound: {fileID: 0}
 --- !u!114 &6591038074183567548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,6 +1496,7 @@ MonoBehaviour:
   speed: 5
   jumpSpeed: 10
   isJumping: 0
+  jumpSound: {fileID: 0}
 --- !u!114 &4348142218179230998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,8 +1648,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2297622212884815167}
   m_Bounds:
-    m_Center: {x: -0.0025465488, y: -0.00004708767, z: 0}
-    m_Extent: {x: 1.1054602, y: 0.9860941, z: 0}
+    m_Center: {x: -0.002546072, y: -0.000046610832, z: 0}
+    m_Extent: {x: 1.1054599, y: 0.986094, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1714,7 +1726,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1944507666628656899, guid: c0816cac1ba043c4da80f1e13d60bbfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1759,8 +1771,8 @@ MonoBehaviour:
   - {fileID: 3792032887188922820}
   - {fileID: 4279324806584586203}
   m_Bounds:
-    m_Center: {x: 0.000049114227, y: 0.0001399517, z: 0}
-    m_Extent: {x: 1.37995, y: 0.83985996, z: 0}
+    m_Center: {x: 0.000049948692, y: 0.00014013052, z: 0}
+    m_Extent: {x: 1.3799499, y: 0.83985984, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2059,7 +2071,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 6
   m_Sprite: {fileID: 4926399135662252009, guid: c0816cac1ba043c4da80f1e13d60bbfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2087,7 +2099,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 4296214912113325001}
   m_Bounds:
-    m_Center: {x: -0.007141173, y: -0.002208352, z: 0}
+    m_Center: {x: -0.0071411133, y: -0.0022082925, z: 0}
     m_Extent: {x: 0.80927426, y: 0.63645494, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
