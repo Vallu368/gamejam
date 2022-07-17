@@ -18,6 +18,7 @@ public class Dice : MonoBehaviour {
     [SerializeField] GameObject diceScreen;
     [SerializeField] GameObject player;
     [SerializeField] GameObject henry;
+    [SerializeField] GameObject actualDiceScreen;
 
     // Use this for initialization
     private void Start () {
@@ -70,6 +71,7 @@ public class Dice : MonoBehaviour {
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 1");
+            actualDiceScreen.SetActive(false);
             map1.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
@@ -80,6 +82,7 @@ public class Dice : MonoBehaviour {
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 2");
+            actualDiceScreen.SetActive(false);
             map2.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
@@ -90,6 +93,7 @@ public class Dice : MonoBehaviour {
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 3");
+            actualDiceScreen.SetActive(false);
             map3.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
@@ -100,6 +104,7 @@ public class Dice : MonoBehaviour {
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 4");
+            actualDiceScreen.SetActive(false);
             map4.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
@@ -110,6 +115,7 @@ public class Dice : MonoBehaviour {
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 5");
+            actualDiceScreen.SetActive(false);
             map5.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
@@ -120,6 +126,7 @@ public class Dice : MonoBehaviour {
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 6");
+            actualDiceScreen.SetActive(false);
             map6.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
             player.SetActive(true);
