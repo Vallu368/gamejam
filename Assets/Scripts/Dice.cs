@@ -19,6 +19,7 @@ public class Dice : MonoBehaviour {
     [SerializeField] GameObject player;
     [SerializeField] GameObject henry;
     [SerializeField] GameObject actualDiceScreen;
+    [SerializeField] private AudioSource nopanHeitto;
 
     // Use this for initialization
     private void Start () {
@@ -33,6 +34,7 @@ public class Dice : MonoBehaviour {
     // If you left click over the dice then RollTheDice coroutine is started
     private void OnMouseDown()
     {
+        nopanHeitto.Play();
         StartCoroutine("RollTheDice");
     }
 
