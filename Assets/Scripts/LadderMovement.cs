@@ -8,8 +8,16 @@ public class LadderMovement : MonoBehaviour
     [SerializeField] private float speed;
     private bool isLadder;
     private bool isClimbing;
+    private Animator anim;
 
     [SerializeField] private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        //Grab references for animator from object
+        anim = GetComponent<Animator>();
+
+    }
 
     private void Update()
     {
@@ -19,6 +27,8 @@ public class LadderMovement : MonoBehaviour
         {
             isClimbing = true;
         }
+
+        anim.SetBool("isclimbing", isClimbing);
     }
 
     private void FixedUpdate()
