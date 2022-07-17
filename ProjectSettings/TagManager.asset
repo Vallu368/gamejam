@@ -13,6 +13,7 @@ TagManager:
   - ButtonK2
   - ButtonK3
   - ButtonK5
+  - Item
   layers:
   - Default
   - TransparentFX

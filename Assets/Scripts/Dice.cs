@@ -16,6 +16,7 @@ public class Dice : MonoBehaviour {
     [SerializeField] GameObject map5;
     [SerializeField] GameObject map6;
     [SerializeField] GameObject diceScreen;
+    [SerializeField] GameObject player;
 
     // Use this for initialization
     private void Start () {
@@ -69,42 +70,48 @@ public class Dice : MonoBehaviour {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 1");
             map1.SetActive(true);
-            diceScreen.transform.position = new Vector2(-8, 0);
+            diceScreen.transform.position = new Vector2(-20, 0);
+            player.transform.position = new Vector2(3, -3.20f);
         }
         else if(finalSide == 2)
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 2");
             map2.SetActive(true);
-            diceScreen.transform.position = new Vector2(-8, 0);
+            diceScreen.transform.position = new Vector2(-20, 0);
+            player.transform.position = new Vector2(-3.15f, -3.28f);
         }
         else if (finalSide == 3)
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 3");
             map3.SetActive(true);
-            diceScreen.transform.position = new Vector2(-8, 0);
+            diceScreen.transform.position = new Vector2(-20, 0);
+            player.transform.position = new Vector2(0.37f, -3.47f);
         }
         else if (finalSide == 4)
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 4");
             map4.SetActive(true);
-            diceScreen.transform.position = new Vector2(-8, 0);
+            diceScreen.transform.position = new Vector2(-20, 0);
+            player.transform.position = new Vector2(-3.11f, -2.94f);
         }
         else if (finalSide == 5)
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 5");
             map5.SetActive(true);
-            diceScreen.transform.position = new Vector2(-8, 0);
+            diceScreen.transform.position = new Vector2(-20, 0);
+            player.transform.position = new Vector2(0.18f, -3.55f);
         }
         else if (finalSide == 6)
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Map 6");
             map6.SetActive(true);
-            diceScreen.transform.position = new Vector2(-8, 0);
+            diceScreen.transform.position = new Vector2(-20, 0);
+            player.transform.position = new Vector2(3.84f, -3.54f);
         }
     }
 }
