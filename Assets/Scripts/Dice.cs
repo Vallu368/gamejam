@@ -71,7 +71,8 @@ public class Dice : MonoBehaviour {
             Debug.Log("Map 1");
             map1.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
-            player.transform.position = new Vector2(3, -3.20f);
+            player.SetActive(true);
+            player.transform.position = new Vector2(3, -6.41f);
         }
         else if(finalSide == 2)
         {
@@ -79,7 +80,8 @@ public class Dice : MonoBehaviour {
             Debug.Log("Map 2");
             map2.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
-            player.transform.position = new Vector2(-3.15f, -3.28f);
+            player.SetActive(true);
+            player.transform.position = new Vector2(-3.15f, -6.49f);
         }
         else if (finalSide == 3)
         {
@@ -87,7 +89,8 @@ public class Dice : MonoBehaviour {
             Debug.Log("Map 3");
             map3.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
-            player.transform.position = new Vector2(0.37f, -3.47f);
+            player.SetActive(true);
+            player.transform.position = new Vector2(0.37f, -6.46f);
         }
         else if (finalSide == 4)
         {
@@ -95,7 +98,8 @@ public class Dice : MonoBehaviour {
             Debug.Log("Map 4");
             map4.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
-            player.transform.position = new Vector2(-3.11f, -2.94f);
+            player.SetActive(true);
+            player.transform.position = new Vector2(-3.11f, -6.41f);
         }
         else if (finalSide == 5)
         {
@@ -103,7 +107,8 @@ public class Dice : MonoBehaviour {
             Debug.Log("Map 5");
             map5.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
-            player.transform.position = new Vector2(0.18f, -3.55f);
+            player.SetActive(true);
+            player.transform.position = new Vector2(0.18f, -6.33f);
         }
         else if (finalSide == 6)
         {
@@ -111,7 +116,8 @@ public class Dice : MonoBehaviour {
             Debug.Log("Map 6");
             map6.SetActive(true);
             diceScreen.transform.position = new Vector2(-20, 0);
-            player.transform.position = new Vector2(3.84f, -3.54f);
+            player.SetActive(true);
+            player.transform.position = new Vector2(3.84f, -6.62f);
         }
     }
 }
