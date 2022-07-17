@@ -10,6 +10,8 @@ public class AlsoPlayerMovement : MonoBehaviour
     public bool isJumping;
     private Animator anim;
 
+    [SerializeField] private AudioSource jumpSound;
+
     private void Awake()
     {
         //Grab references for rigidbody and animator from object
@@ -40,6 +42,7 @@ public class AlsoPlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && isJumping == false)
             {
+            jumpSound.Play();
             body.velocity = new Vector2(body.velocity.x, jumpSpeed);
             anim.SetTrigger("Jump");
             isJumping = true;

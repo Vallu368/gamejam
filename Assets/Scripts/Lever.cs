@@ -13,6 +13,7 @@ public class Lever : MonoBehaviour
     [SerializeField] GameObject tikkaat;
     [SerializeField] GameObject kalteriKolme;
     [SerializeField] GameObject kalteriViis;
+    [SerializeField] private AudioSource switchSound;
 
     private void Update()
     {
@@ -28,16 +29,19 @@ public class Lever : MonoBehaviour
 
         if(isButtonKTwo == true && Input.GetKey(KeyCode.E))
         {
+            switchSound.Play();
             tikkaat.SetActive(true);
         }
 
         if(isButtonKThree == true && Input.GetKey(KeyCode.E))
         {
+            switchSound.Play();
             kalteriKolme.SetActive(false);
         }
 
         if (isButtonKFive == true && Input.GetKey(KeyCode.E))
         {
+            switchSound.Play();
             kalteriViis.SetActive(false);
         }
     }

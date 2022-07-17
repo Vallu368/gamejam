@@ -13,12 +13,14 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] GameObject DiceScene;
     [SerializeField] GameObject Dice;
     [SerializeField] GameObject Player;
+    [SerializeField] private AudioSource itemSound;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Item1"))
         {
             Destroy(collision.gameObject);
+            itemSound.Play();
             Debug.Log("Item 1 collected");
             StartCoroutine(WaitTime());
             Level1.SetActive(false);
@@ -30,6 +32,7 @@ public class ItemCollector : MonoBehaviour
         if (collision.CompareTag("Item2"))
         {
             Destroy(collision.gameObject);
+            itemSound.Play();
             Debug.Log("Item 2 collected");
             StartCoroutine(WaitTime());
             Level2.SetActive(false);
@@ -41,6 +44,7 @@ public class ItemCollector : MonoBehaviour
         if (collision.CompareTag("Item3"))
         {
             Destroy(collision.gameObject);
+            itemSound.Play();
             Debug.Log("Item 3 collected");
             StartCoroutine(WaitTime());
             Level3.SetActive(false);
@@ -52,6 +56,7 @@ public class ItemCollector : MonoBehaviour
         if (collision.CompareTag("Item4"))
         {
             Destroy(collision.gameObject);
+            itemSound.Play();
             Debug.Log("Item 4 collected");
             StartCoroutine(WaitTime());
             Level4.SetActive(false);
@@ -63,6 +68,7 @@ public class ItemCollector : MonoBehaviour
         if (collision.CompareTag("Item5"))
         {
             Destroy(collision.gameObject);
+            itemSound.Play();
             Debug.Log("Item 5 collected");
             StartCoroutine(WaitTime());
             Level5.SetActive(false);
@@ -74,6 +80,7 @@ public class ItemCollector : MonoBehaviour
         if (collision.CompareTag("Item6"))
         {
             Destroy(collision.gameObject);
+            itemSound.Play();
             Debug.Log("Item 6 collected");
             StartCoroutine(WaitTime());
             Level6.SetActive(false);
